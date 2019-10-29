@@ -1,0 +1,4 @@
+enabled: true
+active: true
+production: true 
+#custom_path: assets/photoimages  #no leading or trailing slash

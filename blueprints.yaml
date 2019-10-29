@@ -1,0 +1,27 @@
+name: Photo Images
+version: 0.1.0
+description: Applies photograph "printed" effect to images (frame, shadow and rotation) via [ultrix3x/JQueryPhotoImages](https://github.com/ultrix3x/JQueryPhotoImages)
+icon: camera
+author:
+  name: Jonathan Leaders
+  email: jonathanleaders@gmail.com
+homepage: https://github.com/jleaders/grav-plugin-photoimages
+demo: https://github.com/jleaders/grav-plugin-photoimages/
+keywords: grav, plugin, jquery, photoimages, border, frame, rotate, vintage, frames, photograph, print
+bugs: https://github.com/jleaders/grav-plugin-photoimages/issues
+docs: https://github.com/jleaders/grav-plugin-photoimages/blob/master/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
