@@ -1,3 +1,7 @@
+# Example
+
+![Example](https://user-images.githubusercontent.com/2430917/67797181-ace62580-fa81-11e9-807b-02bc1504f4ec.png)
+
 # Photo Images Plugin
 
 The **Photo Images** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). Grav Plugin - Applies photograph "printed" effect to images (frame, shadow and rotation) via [ultrix3x/JQueryPhotoImages](http://github.com/ultrix3x/JQueryPhotoImages)
