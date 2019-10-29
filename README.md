@@ -1,7 +1,5 @@
 # Photo Images Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of the plugin.**
-
 The **Photo Images** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). Grav Plugin - Applies photograph "printed" effect to images (frame, shadow and rotation) via [ultrix3x/JQueryPhotoImages](http://github.com/ultrix3x/JQueryPhotoImages)
 
 ## Installation
@@ -44,13 +42,38 @@ Note that if you use the Admin Plugin, a file with your configuration named phot
 
 ## Usage
 
-**Describe how to use the plugin.**
+Simply add the `frame-tilt` CSS class to an image, i.e.:
+
+    ![alt text](myimage.jpg?classes=frame-tilt)
+    
+or
+
+    <img src='mypage/myimage.jpg' class='frame-tilt'>
+
+You can control the parameters like this:
+
+	<script>
+	    jQuery(document).ready(function() {
+		// Create photoImages with a seed-based rotation
+		jQuery('.my-frame-tilt').photoImages({
+		    boxShadowOffsetX: '10px',
+		    boxShadowOffsetY: '10px',
+		    boxShadowLength: '10px',
+		    boxShadowColor: '#7f7f7f',
+		    marginRight: '10px',
+		    rotate: 'seed'
+		});
+	    });
+	</script>
+	
+Then use `my-frame-tilt` class
 
 ## Credits
 
-**Did you incorporate third-party code? Want to thank somebody?**
+* Grav plugin by Jonathan Leaders
+* Original photo image code by [ultrix3x/JQueryPhotoImages](http://github.com/ultrix3x/JQueryPhotoImages)
 
 ## To Do
 
-- [ ] Future plans, if any
+- [ ] Upgrade functionality to support a firstclass parameter which sets the degrees of rotation ?framerot=15 
 
